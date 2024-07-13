@@ -1,0 +1,28 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "command": "npm run dev",
+            "name": "Vueの開発用サーバを立ち上げる",
+            "request": "launch",
+            "type": "node-terminal",
+            "cwd": "${workspaceFolder}/vue-front"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "localhost に対して Edge を起動する",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/vue-front",
+        },
+    ],
+    "compounds": [
+        {
+            "name": "execute vue site",
+            "configurations": ["Vueの開発用サーバを立ち上げる", "localhost に対して Edge を起動する"]
+        }
+    ]
+}
